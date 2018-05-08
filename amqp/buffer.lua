@@ -4,7 +4,7 @@
 
 module("buffer",package.seeall)
 
-local logger = require "logger"
+local logger = require "amqp.logger"
 
 -- Try to load bit library
 local bit

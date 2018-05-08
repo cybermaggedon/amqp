@@ -4,9 +4,9 @@
 
 module("amqp",package.seeall)
 
-local c = require "consts"
-local frame = require "frame"
-local logger = require "logger"
+local c = require "amqp.consts"
+local frame = require "amqp.frame"
+local logger = require "amqp.logger"
 
 -- Try to load bit library
 local bit
