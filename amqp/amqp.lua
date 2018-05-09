@@ -9,7 +9,7 @@ local frame = require "amqp.frame"
 local logger = require "amqp.logger"
 
 -- Try to load bit library
-local bit = require "bitopers"
+local bit = require "amqp.bitopers"
 
 local format = string.format
 local gmatch = string.gmatch

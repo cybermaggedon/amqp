@@ -13,7 +13,7 @@ local buffer = require "amqp.buffer"
 local logger = require "amqp.logger"
 
 -- Try to load bit library
-local bit = require("bitopers")
+local bit = require("amqp.bitopers")
 
 local byte = string.byte
 local format = string.format
