@@ -10,7 +10,7 @@ Lua Client for AMQP 0.9.1
 + Consumer
 
 ```lua
-local amqp = require "amqp.amqp"
+local amqp = require "amqp"
 local ctx = amqp.new({role = "consumer", queue = "mengz0", exchange = "amq.topic", ssl = false, user = "guest", password = "guest"})
 ctx:connect("127.0.0.1",5672)
 local ok, err = ctx:consume()
@@ -19,7 +19,7 @@ local ok, err = ctx:consume()
 + Producer
 
 ```lua
-local amqp = require "amqp.amqp"
+local amqp = require "amqp"
 local ctx = amqp.new({role = "publisher", exchange = "amq.topic", ssl = false, user = "guest", password = "guest"})
 ctx:connect("127.0.0.1",5672)
 ctx:setup()
