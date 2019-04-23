@@ -1,6 +1,4 @@
 
-module("bitops",package.seeall)
-
 -- Try to load bit library
 local bit
 local have_bit = pcall(function() bit = require "bit" end)
@@ -16,12 +14,6 @@ if have_bit then
     tohex = bit.tohex
   }
 else
-  return {
-    band = function(a,b) return a & b end,
-    bor = function(a,b) return a | b end,
-    lshift = function(a,b) return a << b end,
-    rshift = function(a,b) return a >> b end,
-    tohex = function(a) return string.format("%x", a) end
-  }
+  return require("amqp.bitnative")
 end
 

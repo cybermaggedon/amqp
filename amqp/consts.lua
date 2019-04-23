@@ -3,7 +3,6 @@
 --
 -- Constants definition
 --
-module("consts",package.seeall)
 
 local amqp = {
 

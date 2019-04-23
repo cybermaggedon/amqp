@@ -2,8 +2,6 @@
 -- Copyright (C) 2016 Meng Zhang @ Yottaa,Inc
 --
 
-module("buffer",package.seeall)
-
 local logger = require "amqp.logger"
 
 -- Try to load bit library

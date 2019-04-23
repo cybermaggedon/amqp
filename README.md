@@ -1,9 +1,6 @@
 # AMQP
-Lua Client for AMQP 0.9.1
 
-## Requirements
-1. LuaJIT 2.1
-2. busted 2.0 (Testing framework)
+Lua Client for AMQP 0.9.1
 
 ## Typical Use Cases
 
@@ -25,3 +22,4 @@ ctx:connect("127.0.0.1",5672)
 ctx:setup()
 local ok, err = ctx:publish("Hello world!")
 ```
+
